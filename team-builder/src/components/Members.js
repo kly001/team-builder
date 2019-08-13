@@ -7,6 +7,8 @@ const Members = props => {
                 return (
                     <div className="member" key = {member.index}>
                         <p>{member.name}</p>
+                        <p>{member.email}</p>
+                        <p>{member.role}</p>
                     </div>
                 )
             })}

@@ -19,7 +19,7 @@ const MembersForm = props => {
 
     return(
         <form onSubmit = {submitForm}>
-            <label htmlFor = "name"> New Member Name</label>
+            <label htmlFor = "name">  New Member </label>
             <input
                 type="text"
                 name="name"
