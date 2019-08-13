@@ -1,6 +1,9 @@
 const memberData = [
     {
-        name: "Abdul",
+        name: "Zack",
+    },
+    {
+        name: "Yvonne",
     },
 ];
 export default memberData;

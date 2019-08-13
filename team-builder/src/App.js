@@ -6,6 +6,7 @@ import data from "./data";
 
 function App() {
   const [members, setMembers] = useState(data)
+  
   return (
     <div className="App">
       <h1>Team Members List</h1>
