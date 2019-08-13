@@ -6,7 +6,7 @@ const Members = props => {
             {props.membersList.map(member => {
                 return (
                     <div className="member" key = {member.index}>
-                        <h2>{member.name}</h2>
+                        <p>{member.name}</p>
                     </div>
                 )
             })}
