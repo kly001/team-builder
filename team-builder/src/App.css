@@ -3,13 +3,13 @@
 .App {
   text-align: center;
   font-family: 'Permanent Marker', cursive;
-  background: black;
-  color: rgb(240, 168, 240);
+  background: lightblue;
+  color: navy;
   padding: 32px;
 }
 
 .member {
-  border: 1px solid white;
+  border: 1px solid dodgerblue;
   margin: 30px 100px;
 }
 

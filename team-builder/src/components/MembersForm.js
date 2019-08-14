@@ -1,25 +1,26 @@
 import React, {useState} from "react";
-import membersData from "../data";
+
 
 const MembersForm = props => {
 
-    const [member, setMember] = useState({name:""})
+    const [member, setMember] = useState("")
 
     const changeHandler = event => {
-        setMember({...member, [event.target.value]: EventTarget.value})
+        setMember(event.target.value)
     }
 
     const submitForm = event => {
         event.preventDefault();
         const newMember = {
-            member,
+            ...member,
+            // id:Date.now()
         }
         props.addNewMember(newMember);
     }
 
     return(
         <form onSubmit = {submitForm}>
-            <label htmlFor = "name">  New Member </label>
+            <label htmlFor = "name">  New Member Name </label>
             <input
                 type="text"
                 name="name"
@@ -27,7 +28,23 @@ const MembersForm = props => {
                 value={member.name}
                 onChange={changeHandler}
                 />
-            <button type="submit">Add Member</button>
+             <label htmlFor = "email">  New Member Email </label>    
+                 <input
+                type="email"
+                name="email"
+                placeholder="Type Email Here"
+                value={member.email}
+                onChange={changeHandler}
+                />
+             <label htmlFor = "role">  New Member Role </label>
+                 <input
+                type="text"
+                name="role"
+                placeholder="Type Role Here"
+                value={member.role}
+                onChange={changeHandler}
+                />
+            <button type="submit">Submit</button>
         </form>
     )
 }

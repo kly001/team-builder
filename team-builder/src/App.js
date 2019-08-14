@@ -6,7 +6,7 @@ import MembersForm from "./components/MembersForm";
 import data from "./data";
 
 function App() {
-  const [members, setMembers] = useState(data)
+  const [members, setMembers] = useState()
 
   const addNewMember = member => {
     setMembers ([...members, member])
