@@ -13,10 +13,10 @@ const MembersForm = props => {
     const submitForm = event => {
         console.log(event)
         event.preventDefault();
-        const newMember = {
-            ...member,
-            id:Date.now()
-        }
+        // const newMember = {
+        //     ...member,
+        //     id:Date.now()
+        // }
         props.addNewMember(member);
         // console.log(newMember)
     }

@@ -9,7 +9,8 @@
 }
 
 .member {
-  border: 1px solid dodgerblue;
+  border: 3px solid dodgerblue;
+  border-radius: 25px;
   margin: 30px 100px;
 }
 

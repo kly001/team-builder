@@ -6,7 +6,7 @@ const membersData = [
     },
     {
         name: "Yvonne",
-        email:"yvonne@gmail.com",
+        email:"yvonne@aol.com",
         role:"frontend engineer",
     },
 ];
