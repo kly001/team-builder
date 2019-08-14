@@ -6,7 +6,7 @@ import MembersForm from "./components/MembersForm";
 import data from "./data";
 
 function App() {
-  const [members, setMembers] = useState()
+  const [members, setMembers] = useState(data)
 
   const addNewMember = member => {
     setMembers ([...members, member])
@@ -14,6 +14,7 @@ function App() {
 
   return (
     <div className="App">
+      {console.log(members)}
       <h1>Team Members List:</h1>
       <Members membersList={members}/>
       <MembersForm addNewMember = {addNewMember}/>

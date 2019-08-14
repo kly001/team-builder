@@ -6,16 +6,19 @@ const MembersForm = props => {
     const [member, setMember] = useState("")
 
     const changeHandler = event => {
-        setMember(event.target.value)
+        // console.log(event)
+        setMember({...member, [event.target.name]: event.target.value})
     }
 
     const submitForm = event => {
+        console.log(event)
         event.preventDefault();
         const newMember = {
             ...member,
-            // id:Date.now()
+            id:Date.now()
         }
-        props.addNewMember(newMember);
+        props.addNewMember(member);
+        // console.log(newMember)
     }
 
     return(
